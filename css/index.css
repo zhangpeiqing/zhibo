@@ -1,0 +1,533 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.2rem;height:100%;background: #f4f4f4;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clear{ *zoom:1; }
+.clear:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.2rem;margin: 0 auto}
+.zg-wrap{margin: 0 auto;width: 7.2rem;}
+header {
+    width: 7.2rem;
+    height: .8rem;
+    background: #f2f2f2;
+}
+header a img {
+    float: left;
+}
+header .logo {
+    display: block;
+    float: left;
+    width: 1.59rem;
+    height: .36rem;
+    margin-top: .2rem;
+    margin-left: .3rem;
+}
+header .zgfb {
+    display: block;
+    float: right;
+    width: 1.15rem;
+    height: .24rem;
+    margin-right: .3rem;
+    margin-top: .32rem;
+}
+header .logo img {
+    width: 1.59rem;
+    height: .34rem;
+}
+header .zgfb img {
+    width: 1.15rem;
+    height: .24rem;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -3.6rem;
+    z-index: 899;
+}
+.navbar {
+    box-shadow: none;
+    background: rgba(70,70,70,0);
+}
+.navbar.active {
+    background: rgb(255,255,255);
+    transition: background 3s;
+}
+/*footer*/
+.foot{
+    position: fixed;
+    bottom:0;
+    width:7.2rem;
+    height:.9rem;
+    overflow: hidden;
+    z-index:999;
+}
+.foot a{
+    float: left;
+    width:3.6rem;
+    font:.26rem/0.9rem 'Microsoft YaHei';
+    text-align: center;
+}
+.foot a:first-child{
+    background: #f2f2f2;
+    color: #000;
+}
+.foot a:first-child img {
+    width: .47rem;
+    height: .4rem;
+    margin-right: .1rem;
+}
+.foot a:last-child{
+    background: #dc2f3c;
+    color: #fff;
+}
+.foot a:last-child img {
+    width: .3rem;
+    height: .38rem;
+    margin-right: .1rem;
+}
+
+
+/*m_banner*/
+.mban {
+    width: 7.2rem;
+    height: 3.74rem;
+    background: url(../images/ban.jpg) no-repeat center top;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+    position: relative;
+}
+.mban h1 {
+    text-indent: -9999px;
+}
+.ht {
+    margin-top: .3rem;
+    width: 7.2rem;
+}
+.htul {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.htul li {
+    flex: 1;
+    height: 1.4rem;
+}
+.htul li .bor {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #2993de;
+    margin: 0 auto;
+}
+.htul li .bor img {
+    float: left;
+    margin-left: .33rem;
+    margin-top: .41rem;
+}
+.htul li .bor.w1 img{
+    width: .34rem;
+    height: .25rem;
+}
+.htul li .bor.w2 img{
+    width: .36rem;
+    height: .25rem;
+}
+.htul li .bor.w3 img{
+    width: .7rem;
+    height: .28rem;
+}
+.htul li .bor.w4 img{
+    width: .31rem;
+    height: .3rem;
+}
+.htul li .bor.yj img {
+    margin-left: .16rem;
+    margin-top: .35rem;
+}
+.htul li p {
+    font:400 .26rem/.26rem "microsoft yahei";
+    color:#666666;
+    text-align: center;
+    margin-top: .1rem;
+    margin-bottom: .37rem;
+}
+/*m_01*/
+.m1 {
+    width: 7.2rem;
+}
+.m1 .tit {
+    height: 1.56rem;
+    margin-top: .42rem;
+    margin-bottom: .38rem;
+    background: url(../images/tbg.png) no-repeat center;
+    -webkit-background-size: 6.8rem;
+    background-size: 6.8rem;
+}
+.m1 .tit h2 {
+    font:700 .36rem/.62rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-bottom: .27rem;
+}
+.m1 .tit .PM {
+    font:400 .3rem/.36rem "microsoft yahei";
+    color:#666666;
+    text-align: center;
+}
+
+
+.zgm1h3 {
+    height: .3rem;
+    margin-bottom: .36rem;
+    padding-left: .2rem;
+}
+.zgm1h3 .line{
+    display: inline-block;
+    float: left;
+    width: .04rem;
+    height: .28rem;
+    background: #116ada;
+    margin-right: .03rem;
+    position: relative;
+    top: .02rem;
+}
+.zgm1h3 span.txt {
+    float: left;
+    height: .3rem;
+    text-align: left;
+    font-size: .3rem;
+    color:#333;
+    line-height: .3rem;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: .02rem;
+    margin-right: .2rem;
+}
+.zgm1h3 ol{
+    float: left;
+    height: .3rem;
+    position: relative;
+    /*top: 4px;*/
+}
+.zgm1h3 ol li{
+    margin-right: .2rem;
+    float: left;
+    height: .3rem;
+    text-align: center;
+    font:400 .26rem/.3rem "microsoft yahei";
+    color:#000;
+    position: relative;
+    transition: 0.3s
+}
+.zgm1h3 ol li.hover {
+    font-weight: bold;
+    color:#ef2e20;
+}
+.zgm1h3 ol li.hover b {
+    display: block;
+    position: absolute;
+    width: .6rem;
+    height: .04rem;
+    background: #ff0000;
+    bottom: -.08rem;
+    left: 50%;
+    margin-left: -.3rem;
+}
+
+.exa_type {
+    
+}
+.exa_typeOne {
+    width: 6.8rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 .1rem rgba(103,107,255,0.5);
+    box-sizing:border-box;
+    padding: .2rem;
+    margin-bottom: .2rem;
+}
+.exa_typeOnet {
+    height: 1.7rem;
+}
+.exa_typeOnet img{
+    float: left;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: .2rem;
+}
+.exa_typeOnet div.text{
+    float: left;
+    width: 4.5rem;
+    height: 1.7rem;
+}
+.exa_typeOnet div.text p{
+    text-align: left;
+    font:400 .18rem/.2rem "microsoft yahei";
+    color:#505050;
+    margin-bottom: .15rem;
+}
+.exa_typeOnet div.text p span {
+    text-align: center;
+    font:400 .2rem/.2rem "microsoft yahei";
+    color:#ef2e20;
+}
+.exa_typeOnebtn {
+    height: .5rem;
+    margin-top: .4rem;
+}
+.exa_typeOnebtn a {
+    display: block;
+    float: left;
+    width: 1.82rem;
+    height: .5rem;
+    border-radius: .25rem;
+    background: url(../images/btnbg.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    font:400 .2rem/.52rem "microsoft yahei";
+    color:#fff;
+}
+.exa_typeOnebtn a:first-child {
+    margin-left: 1.19rem;
+    margin-right: .38rem;
+}
+a.group {
+    display: block;
+    text-align: center;
+    font:400 .22rem/.5rem "microsoft yahei";
+    color:#2993de;
+}
+
+
+/*m2*/
+.m2 {
+    width: 7.2rem;
+}
+.m2 .tit {
+    height: 1.56rem;
+    margin-top: .42rem;
+    margin-bottom: .38rem;
+    background: url(../images/tbg.png) no-repeat center;
+    -webkit-background-size: 6.8rem;
+    background-size: 6.8rem;
+}
+.m2 .tit h2 {
+    font:700 .36rem/.62rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-bottom: .27rem;
+}
+.m2 .tit .PM {
+    font:400 .3rem/.36rem "microsoft yahei";
+    color:#666666;
+    text-align: center;
+}
+
+
+.zgm2h3 {
+    height: .3rem;
+    margin-bottom: .36rem;
+    padding-left: .2rem;
+}
+.zgm2h3 .line{
+    display: inline-block;
+    float: left;
+    width: .04rem;
+    height: .28rem;
+    background: #116ada;
+    margin-right: .03rem;
+    position: relative;
+    top: .02rem;
+}
+.zgm2h3 span.txt {
+    float: left;
+    height: .3rem;
+    text-align: left;
+    font-size: .3rem;
+    color:#333;
+    line-height: .3rem;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: .02rem;
+    margin-right: .2rem;
+}
+.zgm2h3 ol{
+    float: left;
+    height: .3rem;
+    position: relative;
+    /*top: 4px;*/
+}
+.zgm2h3 ol li{
+    margin-right: .2rem;
+    float: left;
+    height: .3rem;
+    text-align: center;
+    font:400 .26rem/.3rem "microsoft yahei";
+    color:#000;
+    position: relative;
+    transition: 0.3s
+}
+.zgm2h3 ol li.hover {
+    font-weight: bold;
+    color:#ef2e20;
+}
+.zgm2h3 ol li.hover b {
+    display: block;
+    position: absolute;
+    width: .6rem;
+    height: .04rem;
+    background: #ff0000;
+    bottom: -.08rem;
+    left: 50%;
+    margin-left: -.3rem;
+}
+
+
+/*m3*/
+.m3 {
+    width: 7.2rem;
+}
+.m3 .tit {
+    height: 1.56rem;
+    margin-top: .42rem;
+    margin-bottom: .38rem;
+    background: url(../images/tbg.png) no-repeat center;
+    -webkit-background-size: 6.8rem;
+    background-size: 6.8rem;
+}
+.m3 .tit h2 {
+    font:700 .36rem/.62rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-bottom: .27rem;
+}
+.m3 .tit .PM {
+    font:400 .3rem/.36rem "microsoft yahei";
+    color:#666666;
+    text-align: center;
+}
+
+.zgmul {
+    width: 6.8rem;
+    margin: 0 auto;
+}
+.zgmul li{
+    float: left;
+    width: 3.3rem;
+    height: 3.2rem;
+    border-radius: .08rem;
+    background: #2993de;
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+    text-align: center;
+}
+.zgmul li:nth-child(2n){
+    margin-right: 0;
+}
+.zgmul li img{
+    float: left;
+    width: .7rem;
+    height: .7rem;
+    margin-top: .2rem;
+    margin-bottom: .13rem;
+    margin-left: 1.3rem;
+}
+.zgmul li h5{
+    font:700 .26rem/.26rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-top: .12rem;
+    margin-bottom: .15rem;
+    letter-spacing: 1px;
+}
+.zgmul li p{
+    font:400 .24rem/.3rem "microsoft yahei";
+    color:#fff;
+    text-align: left;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.lastli {
+    background: none!important;
+    background: url(../images/jiaoshi.png) no-repeat center right -13px #2993de!important;
+    -webkit-background-size: 2.49rem;
+    background-size: 2.49rem;
+}
+.lastli a {
+    display: block;
+    width: 1.3rem;
+    height: .45rem;
+    border:1px solid #fff;
+    border-radius: .23rem;
+    text-align: center;
+    background: #fff;
+    font:700 .2rem/.45rem "microsoft yahei";
+    color:#2993de;
+    margin-top: 1.25rem;
+    margin-left: .5rem;
+    /*letter-spacing: 2px;*/
+    box-sizing:border-box;
+    transition: 0.3s;
+    box-shadow: 0 .02rem .1rem rgba(9,106,175,0.5)
+}
+.lastli a:hover {
+    background: transparent;
+    color:#fff;
+}
+.zgmul li p.wxts {
+    font:400 .2rem/.25rem "microsoft yahei";
+    color:#fff000;
+    text-align: left;
+    margin-left: .2rem;
+    margin-top: .2rem;
+}
+
+
+
+.zgmul li img {
+    -webkit-animation: bk 1.2s infinite both;
+    -moz-animation: bk 1.2s infinite both;
+    -ms-animation: bk 1.2s infinite both;
+    -o-animation: bk 1.2s infinite both;
+    animation: bk 1.2s infinite both;
+}
+
+
+
+
+@keyframes bk {
+  0% {
+  -webkit-transform:scale(1);
+  transform:scale(1)
+  }
+  10%, 20% {
+  -webkit-transform:scale(0.9) rotate(-3deg);
+  transform:scale(0.9) rotate(-3deg)
+  }
+  30%, 50%, 70%, 90% {
+  -webkit-transform:scale(1.1) rotate(3deg);
+  transform:scale(1.1) rotate(3deg)
+  }
+  40%, 60%, 80% {
+  -webkit-transform:scale(1.1) rotate(-3deg);
+  transform:scale(1.1) rotate(-3deg)
+  }
+  100% {
+  -webkit-transform:scale(1) rotate(0);
+  transform:scale(1) rotate(0)
+  }
+}
